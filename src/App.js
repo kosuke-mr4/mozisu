@@ -18,7 +18,9 @@ function App() {
           className="border border-gray-300 rounded-none py-4 px-6 w-full mb-8 text-2xl h-64 mx-4 sm:mx-0"
           placeholder="文字列を入力してください"
         />
-        <p className="text-xl font-bold">文字数: {Array.from(text).length}</p>
+        <p className="text-xl font-bold">
+          文字数: {Array.from(text.replace(/[\n\s]/g, "")).length}
+        </p>
       </div>
     </div>
   );
