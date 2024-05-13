@@ -1,5 +1,6 @@
 // src/App.js
 import { useState } from "preact/hooks";
+import githubIcon from "./assets/github-mark.png";
 
 function App() {
   const [text, setText] = useState("");
@@ -22,6 +23,15 @@ function App() {
           文字数: {Array.from(text.replace(/[\n\s]/g, "")).length}
         </p>
       </div>
+      <footer className="fixed bottom-0 left-0 right-0 flex justify-center items-center h-16">
+        <a
+          href="https://github.com/kosuke-mr4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={githubIcon} alt="GitHub" className="h-8" />
+        </a>
+      </footer>
     </div>
   );
 }
