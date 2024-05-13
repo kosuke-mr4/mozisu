@@ -12,11 +12,11 @@ function App() {
   return (
     <div className="container mx-auto mt-8">
       <h1 className="text-3xl font-bold mb-4 text-center">mozisu</h1>
-      <div className="text-center">
+      <div className="text-center mx-4">
         <textarea
           value={text}
           onInput={handleInput}
-          className="border border-gray-300 rounded-none py-4 px-6 w-full mb-8 text-2xl h-64 mx-4 sm:mx-0"
+          className="border border-gray-300 rounded-none py-4 px-6 w-full mb-8 text-2xl"
           placeholder="文字列を入力してください"
         />
         <p className="text-xl font-bold">
