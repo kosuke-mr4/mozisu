@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "grapheme-splitter": "^1.0.4",
     "preact": "^10.21.0"
   },
   "devDependencies": {
